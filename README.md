@@ -1,15 +1,15 @@
-Epic & Feature Rightsizing Template
+# Epic & Feature Rightsizing Template
 
-What is this report? 
+## What is this report? 
 This will detail, based on your historical completed Epics and/or Features, what was the size of these items (in terms of child item count). It will also detail what the size is (in terms of child item count) of your current ‘in progress’ or ‘planned’ Epics and/or Features.
 
-Why would you use it? 
+## Why would you use it? 
 Aiming for consistency around the size of Epics and/or Features improves our ability to be more predictable around forecasting delivery and also means we don’t have work remaining open indefinitely. 
 
-When would you use it?
+## When would you use it?
 Use this when trying to understand what the ‘right size’ is for your Epics and/or Features is. Similarly you might want to use this when planning work for a quarter/semester. You may also want to use it when you have a hunch about an ever increasing scope to a piece of work.
 
-Steps to load the information
+## Steps to load the information
 Download the template using this link
 Open the template in Power BI Desktop
 Enter your Organization / Project / Team Name details in the fields provided:
@@ -17,7 +17,7 @@ Hit load
 Note: you may be asked for a login - follow these steps if it’s your first time
 Then your data is loaded
 
-Using the report
+## Using the report
 There are a few different ways you can use the report. For example, you might want to focus on the count of Features that are under an Epic, if so you’d use a view similar to this:
 
 IMAGE
