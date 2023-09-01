@@ -1,30 +1,58 @@
-# Epic & Feature Rightsizing Template
+# Epic & Feature Rightsizing for Jira & Azure DevOps
 
-## What is this report? 
+### What is this report? 
 This will detail, based on your historical completed Epics and/or Features, what was the size of these items (in terms of child item count). It will also detail what the size is (in terms of child item count) of your current ‘in progress’ or ‘planned’ Epics and/or Features.
 
-## Why would you use it? 
+### Why would you use it? 
 Aiming for consistency around the size of Epics and/or Features improves our ability to be more predictable around forecasting delivery and also means we don’t have work remaining open indefinitely. 
 
-## When would you use it?
+### When would you use it?
 Use this when trying to understand what the ‘right size’ is for your Epics and/or Features is. Similarly you might want to use this when planning work for a quarter/semester. You may also want to use it when you have a hunch about an ever increasing scope to a piece of work.
 
-## Steps to load the information
-Download the template using this link
-Open the template in Power BI Desktop
-Enter your Organization / Project / Team Name details in the fields provided:
-Hit load
-Note: you may be asked for a login - follow these steps if it’s your first time
-Then your data is loaded
+### Prerequisites
+* [Make sure you have the latest version of Power BI Desktop](https://aka.ms/pbiSingleInstaller)
+* Download the appropriate template file:
+  - [Jira version](
+  - [Azure DevOps version](
+* If you are setting this up for Jira then [follow these steps](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/) to setup a Jira API token and note it down (e.g. copy/paste into Notepad)
+* If you are setting this up for Azure DevOps then [follow these steps](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows#create-a-pat) to setup a Personal Access Token (PAT) with full access and note it down (e.g. copy/paste into Notepad)
+* Then you're good to get started!
 
-## Using the report
-There are a few different ways you can use the report. For example, you might want to focus on the count of Features that are under an Epic, if so you’d use a view similar to this:
+### Connectivity & Data Load
+* Open the relevant .pbit file in Power BI Desktop
+* For Jira:
+  - Add your Jira URL
+  - Add your Jira Project Key
+* For Azure DevOps:
+  - Select http/https (only choose http if your Azure DevOps Server is HTTP)
+  - Add the Analytics / Azure DevOps Server URL - for Azure DevOps services enter 'analytics.dev.azure.com' / for Azure DevOps Server enter your server details
+  - Add your Organization / Project / Team Name
 
-IMAGE
+* It should then look something like this (for Jira):
+![image](https://github.com/nbrown02/EpicFeatureMonteCarlo/assets/29369962/0e45b3f1-f5cb-4f9b-aa8e-1fd13fc7e860)
 
-Based on the past 18 weeks we can see that the right size (85% of the time) for our Epics was to have 11 Features or less underneath them. We therefore might want to look at those items that have been ‘red flagged’ as being bigger than this and think about reducing the scope of this. Similarly, we might want to look at the yellow warning next to our Epic which already has 11 child Features as this now is nearly bigger than 85% of the work previously. Here you might want to be having conversations around scope and the rate at which this is growing and the potential risks this may be bringing about in elongating the feedback loop to what it is we are working on. The same logic can be applied when looking at Epic size in terms of child items at Feature AND Story level (it also cross filters to show where the bigger sizing may be occurring): 
 
-IMAGE
+* Or this (for Azure DevOps):
+![image](https://github.com/nbrown02/EpicFeatureMonteCarlo/assets/29369962/4418579e-ced1-4065-8e7a-6561d77f540d)
 
-This is helpful when your Feature count is ‘right-sized’ but at story level you might want to just check there aren’t too many items. You can also use this to look at the count of items at Story level (including custom items) within a Feature. The title column in every table is a hyperlink that will take you to that respective item in Azure DevOps.
-It’s worth noting that there is no universal right-size - just consider this as a tool you can use to keep track on the size of items and potentially intervene if needed.
+* Hit 'Load' 
+* You will be prompted for a login
+* For Jira, choose Basic and enter:
+  - Your email associated with your Jira account for your username
+  - Your API token you created in the Prerequisities
+
+![alt text](https://raw.githubusercontent.com/nbrown02/FlowViz-Jira/main/Screenshots/Login2.png)
+
+* For Azure DevOps, choose Basic and enter:
+  - Your Personal Access Token (PAT) to login, entering it in the password field (user can be left as blank - make sure it has 'Read' access to Analytics)
+
+![alt text](https://docs.microsoft.com/en-us/azure/devops/report/powerbi/media/authentication-7.png?view=azure-devops)
+
+* Then hit 'Connect' and wait for the data and charts to load!
+
+### Screenshots
+
+![alt text](https://raw.githubusercontent.com/nbrown02/EpicFeatureMonteCarlo/main/FMC4.gif)
+
+### Feedback
+This template is built and maintained by [Nicolas Brown](https://www.nicolasbrown.co.uk/) use [the issues section]((https://github.com/nbrown02/EpicFeatureMonteCarlo/issues)) for any bugs you find and [the discussion section](https://github.com/nbrown02/EpicFeatureMonteCarlo/discussions) for any question, ideas and/or feature requests.
