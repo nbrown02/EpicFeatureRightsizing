@@ -29,10 +29,10 @@ Use this when trying to understand what the ‘right size’ is for your Epics a
   - Add your Organization / Project / Team Name
 
 * It should then look something like this (for Jira):
-![image](![image](https://github.com/nbrown02/EpicFeatureRightsizing/assets/29369962/60988366-f440-46e5-9153-2967712ebca1)
+![image](https://github.com/nbrown02/EpicFeatureRightsizing/assets/29369962/60988366-f440-46e5-9153-2967712ebca1)
 
 * Or this (for Azure DevOps):
-![image](https://github.com/nbrown02/EpicFeatureMonteCarlo/assets/29369962/4418579e-ced1-4065-8e7a-6561d77f540d)
+![image](https://github.com/nbrown02/EpicFeatureRightsizing/assets/29369962/8641b0eb-e0bc-4379-9080-4aba4ffae9a6)
 
 * Hit 'Load' 
 * You will be prompted for a login
@@ -51,7 +51,15 @@ Use this when trying to understand what the ‘right size’ is for your Epics a
 
 ### Screenshots
 
-![alt text](https://raw.githubusercontent.com/nbrown02/EpicFeatureMonteCarlo/main/FMC4.gif)
+Jira:
+
+
+Azure DevOps (as ADO has a three-level hierarchy the view is slightly different):
+
+### Using the report
+Based on the selected date range you can see the right size (85th percentile) for Epics/Features in terms of their child item count. You may want to look at those 'open' Epics/Features and those items that have been ‘red flagged’ as being bigger than this and think about reducing the scope of this.
+
+Similarly, we might want to look at the yellow warning next to our Epic/Feature as this now is nearly bigger than 85% of those Epics/Features previously. Here you might want to be having conversations around scope and the rate at which this is growing and the potential risks this may be bringing about in elongating the feedback loop to what it is we are working on.
 
 ### Feedback
 This template is built and maintained by [Nicolas Brown](https://www.nicolasbrown.co.uk/) use [the issues section]((https://github.com/nbrown02/EpicFeatureMonteCarlo/issues)) for any bugs you find and [the discussion section](https://github.com/nbrown02/EpicFeatureMonteCarlo/discussions) for any question, ideas and/or feature requests.
