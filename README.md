@@ -12,8 +12,8 @@ Use this when trying to understand what the ‘right size’ is for your Epics a
 ### Prerequisites
 * [Make sure you have the latest version of Power BI Desktop](https://aka.ms/pbiSingleInstaller)
 * Download the appropriate template file:
-  - [Jira version](
-  - [Azure DevOps version](
+  - [Jira version](https://github.com/nbrown02/EpicFeatureRightsizing/raw/main/Rightsizing%20(Jira).pbit)
+  - [Azure DevOps version](https://github.com/nbrown02/EpicFeatureRightsizing/raw/main/Rightsizing%20(Azure%20DevOps).pbit)
 * If you are setting this up for Jira then [follow these steps](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/) to setup a Jira API token and note it down (e.g. copy/paste into Notepad)
 * If you are setting this up for Azure DevOps then [follow these steps](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows#create-a-pat) to setup a Personal Access Token (PAT) with full access and note it down (e.g. copy/paste into Notepad)
 * Then you're good to get started!
@@ -52,9 +52,12 @@ Use this when trying to understand what the ‘right size’ is for your Epics a
 ### Screenshots
 
 Jira:
-
+![alt text](https://raw.githubusercontent.com/nbrown02/EpicFeatureRightsizing/main/Jira1.png)
 
 Azure DevOps (as ADO has a three-level hierarchy the view is slightly different):
+![alt text](https://raw.githubusercontent.com/nbrown02/EpicFeatureRightsizing/main/ADO1.png)
+
+![alt text](https://raw.githubusercontent.com/nbrown02/EpicFeatureRightsizing/main/ADO2.png)
 
 ### Using the report
 Based on the selected date range you can see the right size (85th percentile) for Epics/Features in terms of their child item count. You may want to look at those 'open' Epics/Features and those items that have been ‘red flagged’ as being bigger than this and think about reducing the scope of this.
