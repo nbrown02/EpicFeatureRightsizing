@@ -29,8 +29,7 @@ Use this when trying to understand what the ‘right size’ is for your Epics a
   - Add your Organization / Project / Team Name
 
 * It should then look something like this (for Jira):
-![image](https://github.com/nbrown02/EpicFeatureMonteCarlo/assets/29369962/0e45b3f1-f5cb-4f9b-aa8e-1fd13fc7e860)
-
+![image](![image](https://github.com/nbrown02/EpicFeatureRightsizing/assets/29369962/60988366-f440-46e5-9153-2967712ebca1)
 
 * Or this (for Azure DevOps):
 ![image](https://github.com/nbrown02/EpicFeatureMonteCarlo/assets/29369962/4418579e-ced1-4065-8e7a-6561d77f540d)
